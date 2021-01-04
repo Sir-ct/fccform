@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" href="./style.css/main.css">
+</head>
+<body>
+    <div id="bodywrap">
+        <div id="header">
+            <h1 id="title">Chess camp Survey form</h1>
+            <h3 id="description">Thank you for taking your time and helping us improve the platform</h3>
+        </div>
+
+        <div id="formwrap">
+        <form id="survey-form" name="surveyform">
+            <div class="section">
+                <div><label for="name" id="name-label">Name</label></div>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="section">
+                <div><label for="email" id="email-label">Email</label></div>
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            </div>
+    
+            <div class="section">
+                <div><label for="age" id="number-label">Age(optional)</label></div>
+                <input type="number" id="number" name="age" placeholder="Age" min="10" max="99">
+            </div>
+           
+            <div class="section">
+                <div><label>Which option best describes your current level</label></div>
+                <select name="chesslevel" id="dropdown">
+                    <option value="newbie">Newbie</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="amateur">Amateur</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                    <option value="grandmaster">Grandmaster</option>
+                </select>
+            </div>
+           
+            <div class="section">
+                <div><label>Would You Recommend ChessCamp to a friend</label></div>
+                <div id="recommend"> 
+                    <div class="recommendoption"><input type="radio" name="recommend" value="Definitley">Definitley</div>
+                    <div class="recommendoption"><input type="radio" name="recommend" value="maybe">Maybe</div>
+                    <div class="recommendoption"><input type="radio" name="recommend" value="notsure">Not Sure</div>
+                </div>  
+            </div>
+
+            <div class="section">
+                <div><label>What is your favourite feature of chess camp</label></div>
+                <select name="favouritefeature" id="favfeature">
+                    <option value="classes">Classes</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="community">Community</option>
+                </select>
+            </div>
+            
+            <div class="section">
+                <div><label>What would you like improved? (check all that apply)</label></div>
+                <div class="improvement"><input type="checkbox" name="improvement" value="opening"> Opening game challenges</div>
+                <div class="improvement"><input type="checkbox" name="improvement" value="middle"> Middle game challenges</div>
+                <div class="improvement"><input type="checkbox" name="improvement" value="endgame"> End game challenges</div>
+                <div class="improvement"><input type="checkbox" name="improvement" value="forums"> Community forums</div>
+                <div class="improvement"><input type="checkbox" name="improvement" value="general"> Whole game challenges</div>
+                <div class="improvement"><input type="checkbox" name="improvement" value="addcourses"> Additional courses</div>
+
+            </div>
+            
+            <div class="section">
+                <div id="suggestions">Any comments or suggestions?</div>
+                <textarea name="suggestions" id="textarea" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <button type="submit" id="submit">Submit</button> 
+        </form>
+        </div>
+    </div>
+</body>
+</html>
